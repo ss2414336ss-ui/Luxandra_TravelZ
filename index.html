@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="LuxAndra Travel - Luxury, family, and pet-friendly vacations tailored just for you."/>
+  <meta name="keywords" content="luxury travel, family vacations, pet friendly trips, holiday packages, LuxAndra Travel">
+  <title>LuxAndra Travel</title>
+  <link rel="stylesheet" href="styles.css"/>
+  <link rel="icon" href="favicon.ico" type="image/x-icon"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <div id="progressBar"></div>
+  <header>
+    <div class="branding">
+      <a href="index.html"><img src="logo.png" alt="LuxAndra Travel Logo" class="logo"></a>
+      <h1>LuxAndra Travel</h1>
+      <p class="tagline">"Your best journey, our greatest blessing."</p>
+    </div>
+    <button class="menu-toggle" aria-label="Toggle navigation"><span></span><span></span><span></span></button>
+    <nav aria-label="Main Navigation" class="nav-links">
+      <a href="index.html" class="active"><i class="fas fa-home"></i><span> Home</span></a>
+      <a href="about.html"><i class="fas fa-info-circle"></i><span> About</span></a>
+      <a href="destinations.html"><i class="fas fa-map-marked-alt"></i><span> Destinations</span></a>
+      <a href="packages.html"><i class="fas fa-suitcase-rolling"></i><span> Packages</span></a>
+      <a href="gallery.html"><i class="fas fa-image"></i><span> Gallery</span></a>
+      <a href="reviews.html"><i class="fas fa-star"></i><span> Reviews</span></a>
+      <a href="contact.html"><i class="fas fa-envelope"></i><span> Contact</span></a>
+    </nav>
+  </header>
+  <main>
+    <section class="hero">
+      <h2>Explore the World in Luxury & Comfort</h2>
+      <p>Book family and pet-friendly vacations with us today!</p>
+      <a href="packages.html" class="cta-btn">View Packages</a>
+    </section>
+
+    <!-- Featured Destinations Grid -->
+    <section style="padding:2rem; max-width:1200px; margin:auto;">
+      <h3 style="text-align:center; margin-bottom:1.5rem;">Featured Destinations</h3>
+      <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); gap:1rem;">
+        <div><img src="assets/destination1.jpg" alt="Destination 1" style="width:100%; border-radius:8px;"><h4>Destination 1</h4></div>
+        <div><img src="assets/destination2.jpg" alt="Destination 2" style="width:100%; border-radius:8px;"><h4>Destination 2</h4></div>
+        <div><img src="assets/gallery1.jpg" alt="Gallery 1" style="width:100%; border-radius:8px;"><h4>Adventure</h4></div>
+      </div>
+    </section>
+  </main>
+  <button id="backToTop" aria-label="Back to top">↑</button>
+  <footer>
+    <p>Contact us at: <a href="tel:+917005469915">+91 7005469915</a> | 
+    <a href="mailto:exon-jingles.61@icloud.com">exon-jingles.61@icloud.com</a></p>
+    <p>&copy; 2025 LuxAndra Travel</p>
+  </footer>
+  <script src="script.js" defer></script>
+</body>
+</html>

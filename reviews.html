@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Reviews - LuxAndra Travel</title>
+  <link rel="stylesheet" href="styles.css"/>
+  <link rel="icon" href="favicon.ico" type="image/x-icon"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    .reviews-container {
+      padding: 2rem;
+      max-width: 1000px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+      gap: 1.5rem;
+    }
+    .review-card {
+      background: #fff;
+      border-radius: 10px;
+      padding: 1.5rem;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+    .review-card:hover {
+      transform: translateY(-5px);
+    }
+    .review-card p {
+      font-style: italic;
+      margin-bottom: 1rem;
+    }
+    .review-card h4 {
+      margin: 0;
+      font-size: 1.1rem;
+      color: #2c3e50;
+    }
+    .review-card .stars {
+      color: #e67e22;
+      margin-bottom: 0.5rem;
+    }
+  </style>
+</head>
+<body>
+  <div id="progressBar"></div>
+  <header>
+    <div class="branding">
+      <a href="index.html"><img src="logo.png" alt="LuxAndra Travel Logo" class="logo"></a>
+      <h1>LuxAndra Travel</h1>
+      <p class="tagline">"Your best journey, our greatest blessing."</p>
+    </div>
+    <button class="menu-toggle" aria-label="Toggle navigation"><span></span><span></span><span></span></button>
+    <nav aria-label="Main Navigation" class="nav-links">
+      <a href="index.html"><i class="fas fa-home"></i><span> Home</span></a>
+      <a href="about.html"><i class="fas fa-info-circle"></i><span> About</span></a>
+      <a href="destinations.html"><i class="fas fa-map-marked-alt"></i><span> Destinations</span></a>
+      <a href="packages.html"><i class="fas fa-suitcase-rolling"></i><span> Packages</span></a>
+      <a href="gallery.html"><i class="fas fa-image"></i><span> Gallery</span></a>
+      <a href="reviews.html" class="active"><i class="fas fa-star"></i><span> Reviews</span></a>
+      <a href="contact.html"><i class="fas fa-envelope"></i><span> Contact</span></a>
+    </nav>
+  </header>
+  <main>
+    <section class="hero" style="background:#c0392b;">
+      <h2>Reviews</h2>
+      <p>What our happy travelers are saying</p>
+    </section>
+    <section class="reviews-container">
+      <div class="review-card">
+        <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+        <p>"LuxAndra made our honeymoon unforgettable! Everything was perfectly organized."</p>
+        <h4>- Priya & Arjun</h4>
+      </div>
+      <div class="review-card">
+        <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></div>
+        <p>"We loved that they planned a pet-friendly vacation for our family. Highly recommended!"</p>
+        <h4>- Neha Sharma</h4>
+      </div>
+      <div class="review-card">
+        <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+        <p>"Professional service and luxurious experience. Will book again!"</p>
+        <h4>- Rajiv Mehta</h4>
+      </div>
+    </section>
+  </main>
+  <button id="backToTop" aria-label="Back to top">↑</button>
+  <footer>
+    <p>Contact us at: <a href="tel:+917005469915">+91 7005469915</a> | 
+    <a href="mailto:exon-jingles.61@icloud.com">exon-jingles.61@icloud.com</a></p>
+    <p>&copy; 2025 LuxAndra Travel</p>
+  </footer>
+  <script src="script.js" defer></script>
+</body>
+</html>

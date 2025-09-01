@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gallery - LuxAndra Travel</title>
+  <link rel="stylesheet" href="styles.css"/>
+  <link rel="icon" href="favicon.ico" type="image/x-icon"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <div id="progressBar"></div>
+  <header>
+    <div class="branding">
+      <a href="index.html"><img src="logo.png" alt="LuxAndra Travel Logo" class="logo"></a>
+      <h1>LuxAndra Travel</h1>
+      <p class="tagline">"Your best journey, our greatest blessing."</p>
+    </div>
+    <button class="menu-toggle" aria-label="Toggle navigation"><span></span><span></span><span></span></button>
+    <nav aria-label="Main Navigation" class="nav-links">
+      <a href="index.html"><i class="fas fa-home"></i><span> Home</span></a>
+      <a href="about.html"><i class="fas fa-info-circle"></i><span> About</span></a>
+      <a href="destinations.html"><i class="fas fa-map-marked-alt"></i><span> Destinations</span></a>
+      <a href="packages.html"><i class="fas fa-suitcase-rolling"></i><span> Packages</span></a>
+      <a href="gallery.html" class="active"><i class="fas fa-image"></i><span> Gallery</span></a>
+      <a href="reviews.html"><i class="fas fa-star"></i><span> Reviews</span></a>
+      <a href="contact.html"><i class="fas fa-envelope"></i><span> Contact</span></a>
+    </nav>
+  </header>
+  <main>
+    <section class="hero" style="background:#2980b9;">
+      <h2>Gallery</h2>
+      <p>A glimpse of unforgettable journeys</p>
+    </section>
+    <section style="padding:2rem; display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:1rem; max-width:1200px; margin:auto;">
+      <img src="assets/gallery1.jpg" alt="Gallery Image 1" style="width:100%; border-radius:8px;">
+      <img src="assets/gallery2.jpg" alt="Gallery Image 2" style="width:100%; border-radius:8px;">
+      <img src="assets/destination1.jpg" alt="Gallery Image 3" style="width:100%; border-radius:8px;">
+      <img src="assets/destination2.jpg" alt="Gallery Image 4" style="width:100%; border-radius:8px;">
+    </section>
+  </main>
+  <button id="backToTop" aria-label="Back to top">↑</button>
+  <footer>
+    <p>Contact us at: <a href="tel:+917005469915">+91 7005469915</a> | 
+    <a href="mailto:exon-jingles.61@icloud.com">exon-jingles.61@icloud.com</a></p>
+    <p>&copy; 2025 LuxAndra Travel</p>
+  </footer>
+  <script src="script.js" defer></script>
+</body>
+</html>

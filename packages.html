@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Packages - LuxAndra Travel</title>
+  <link rel="stylesheet" href="styles.css"/>
+  <link rel="icon" href="favicon.ico" type="image/x-icon"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    .packages-container {
+      padding: 2rem;
+      max-width: 1200px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+      gap: 1.5rem;
+    }
+    .package-card {
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      padding: 2rem;
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+    .package-card:hover {
+      transform: translateY(-5px);
+    }
+    .package-card h3 {
+      margin-bottom: 1rem;
+      color: #2c3e50;
+    }
+    .package-card .price {
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin-bottom: 1rem;
+      color: #e67e22;
+    }
+    .package-card ul {
+      list-style: none;
+      padding: 0;
+      margin-bottom: 1.5rem;
+    }
+    .package-card ul li {
+      margin: 0.5rem 0;
+    }
+    .package-card .cta-btn {
+      display: inline-block;
+      background: #e67e22;
+      color: #fff;
+      padding: 0.7rem 1.2rem;
+      border-radius: 25px;
+      font-size: 1rem;
+      font-weight: bold;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+    .package-card .cta-btn:hover {
+      background: #d35400;
+    }
+  </style>
+</head>
+<body>
+  <div id="progressBar"></div>
+  <header>
+    <div class="branding">
+      <a href="index.html"><img src="logo.png" alt="LuxAndra Travel Logo" class="logo"></a>
+      <h1>LuxAndra Travel</h1>
+      <p class="tagline">"Your best journey, our greatest blessing."</p>
+    </div>
+    <button class="menu-toggle" aria-label="Toggle navigation"><span></span><span></span><span></span></button>
+    <nav aria-label="Main Navigation" class="nav-links">
+      <a href="index.html"><i class="fas fa-home"></i><span> Home</span></a>
+      <a href="about.html"><i class="fas fa-info-circle"></i><span> About</span></a>
+      <a href="destinations.html"><i class="fas fa-map-marked-alt"></i><span> Destinations</span></a>
+      <a href="packages.html" class="active"><i class="fas fa-suitcase-rolling"></i><span> Packages</span></a>
+      <a href="gallery.html"><i class="fas fa-image"></i><span> Gallery</span></a>
+      <a href="reviews.html"><i class="fas fa-star"></i><span> Reviews</span></a>
+      <a href="contact.html"><i class="fas fa-envelope"></i><span> Contact</span></a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" style="background:#8e44ad;">
+      <h2>Travel Packages</h2>
+      <p>Find the perfect trip for you and your loved ones</p>
+    </section>
+
+    <section class="packages-container">
+      <div class="package-card">
+        <h3>Weekend Getaway</h3>
+        <div class="price">₹15,000</div>
+        <ul>
+          <li>2 Nights, 3 Days</li>
+          <li>Luxury Hotel Stay</li>
+          <li>Breakfast & Dinner</li>
+          <li>City Tour Included</li>
+        </ul>
+        <a href="contact.html" class="cta-btn">Book Now</a>
+      </div>
+      <div class="package-card">
+        <h3>Family Adventure</h3>
+        <div class="price">₹45,000</div>
+        <ul>
+          <li>5 Nights, 6 Days</li>
+          <li>Pet-Friendly Resort</li>
+          <li>Guided Activities</li>
+          <li>Complimentary Meals</li>
+        </ul>
+        <a href="contact.html" class="cta-btn">Book Now</a>
+      </div>
+      <div class="package-card">
+        <h3>Luxury Escape</h3>
+        <div class="price">₹90,000</div>
+        <ul>
+          <li>7 Nights, 8 Days</li>
+          <li>5-Star Villa Stay</li>
+          <li>Private Tours</li>
+          <li>Gourmet Dining</li>
+        </ul>
+        <a href="contact.html" class="cta-btn">Book Now</a>
+      </div>
+    </section>
+  </main>
+
+  <button id="backToTop" aria-label="Back to top">↑</button>
+
+  <footer>
+    <p>Contact us at: <a href="tel:+917005469915">+91 7005469915</a> | 
+    <a href="mailto:exon-jingles.61@icloud.com">exon-jingles.61@icloud.com</a></p>
+    <p>&copy; 2025 LuxAndra Travel</p>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
