@@ -368,3 +368,34 @@ nav a {
   text-decoration: none;
   font-weight: bold;
 }
+/* Gallery Thumbnails */
+.gallery img {
+  width: 150px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+}
+
+/* Image Modal Styling */
+#imageModal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.8);
+  justify-content: center;
+  align-items: center;
+  z-index: 10000;
+}
+
+#imageModal img {
+  max-width: 90%;
+  max-height: 80%;
+  border-radius: 8px;
+}
