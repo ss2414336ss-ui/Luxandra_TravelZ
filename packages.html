@@ -1,89 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Packages - LuxAndra Travel</title>
-  <link rel="stylesheet" href="styles.css"/>
-  <link rel="icon" href="favicon.ico" type="image/x-icon"/>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+    <title>Luxandra TravelZ</title>
 </head>
 <body>
-  <div id="progressBar"></div>
-
-  <!-- Header -->
-  <header>
-    <div class="branding">
-      <a href="index.html"><img src="logo.png" alt="LuxAndra Travel Logo" class="logo"></a>
-      <h1>LuxAndra Travel</h1>
-      <p class="tagline">"Your best journey, our greatest blessing."</p>
-    </div>
-    <button class="menu-toggle" aria-label="Toggle navigation"><span></span><span></span><span></span></button>
-    <nav aria-label="Main Navigation" class="nav-links">
-      <a href="index.html"><i class="fas fa-home"></i><span> Home</span></a>
-      <a href="about.html"><i class="fas fa-info-circle"></i><span> About</span></a>
-      <a href="destinations.html"><i class="fas fa-map-marked-alt"></i><span> Destinations</span></a>
-      <a href="packages.html" class="active"><i class="fas fa-suitcase-rolling"></i><span> Packages</span></a>
-      <a href="gallery.html"><i class="fas fa-image"></i><span> Gallery</span></a>
-      <a href="reviews.html"><i class="fas fa-star"></i><span> Reviews</span></a>
-      <a href="contact.html"><i class="fas fa-envelope"></i><span> Contact</span></a>
-    </nav>
-  </header>
-
-  <!-- Main Content -->
-  <main>
-    <section class="hero" style="background:#8e44ad;">
-      <h2>Our Packages</h2>
-      <p>Choose from the best deals and destinations tailored for you!</p>
-    </section>
-
-    <!-- Namaste Pahadi Camp & Retreat Package -->
-    <section style="padding:2rem; max-width:1000px; margin:auto;">
-      <div style="background:#fff; border-radius:10px; box-shadow:0 4px 8px rgba(0,0,0,0.1); overflow:hidden; padding:1rem;">
-        <h3 style="color:#2c3e50;">Namaste Pahadi Camp & Retreat</h3>
-        <p style="color:#555;">
-          Experience serenity with breathtaking views, surrounded by nature and Garhwali traditions.
-        </p>
-        <ul style="color:#333; padding-left:1.2rem;">
-          <li><strong>Retreat Stay:</strong> ₹2200 per night (including taxes, MAP plan)</li>
-          <li><strong>Camp Stay:</strong> ₹1200 per night (including taxes, without meals)</li>
-          <li>Close to nature, peace, and traditional Garhwali experience</li>
-          <li><a href="https://maps.google.com/maps/place//data=!4m2!3m1!1s0x390917e665b0fe27:0x63d12fe76aa78677?entry=s&sa=X&ved=2ahUKEwign-XQm9mPAxWuXWwGHeT-PDkQ4kB6BAgXEAA" target="_blank" style="color:#e67e22; text-decoration:none;">View Location on Map</a></li>
-        </ul>
-
-        <!-- Gallery -->
-        <div class="gallery" style="display:flex; gap:1rem; flex-wrap:wrap; justify-content:center; margin-top:1rem;">
-          <img src="assets/camp1.jpg" alt="Camp View 1" onclick="openImage(this.src)">
-          <img src="assets/camp2.jpg" alt="Camp View 2" onclick="openImage(this.src)">
-          <img src="assets/camp3.jpg" alt="Camp View 3" onclick="openImage(this.src)">
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <!-- Image Modal -->
-  <div id="imageModal">
-    <span style="position:absolute; top:20px; right:40px; font-size:30px; color:#fff; cursor:pointer;" onclick="closeImage()">&times;</span>
-    <img id="modalImage" src="" alt="Full View">
-  </div>
-
-  <!-- Footer -->
-  <footer>
-    <p>Contact us at: <a href="tel:+917005469915">+91 7005469915</a> | 
-    <a href="mailto:exon-jingles.61@icloud.com">exon-jingles.61@icloud.com</a></p>
-    <p>&copy; 2025 LuxAndra Travel</p>
-  </footer>
-
-  <!-- JavaScript -->
-  <script>
-    function openImage(src) {
-      document.getElementById('imageModal').style.display = 'flex';
-      document.getElementById('modalImage').src = src;
-    }
-    function closeImage() {
-      document.getElementById('imageModal').style.display = 'none';
-    }
-  </script>
-  <script src="script.js" defer></script>
+    <h1>Welcome to Luxandra TravelZ</h1>
+    <p>Your adventure begins here!</p>
 </body>
 </html>
