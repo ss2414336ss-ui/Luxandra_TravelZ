@@ -346,4 +346,25 @@ footer a:hover {
   .hero h2 {
     font-size: 2rem;
   }
+}/* Global Background */
+body {
+  background: url('assets/background.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #fff;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Header Styling */
+header {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  text-align: center;
+}
+
+/* Navigation Styling */
+nav a {
+  color: #fff;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
 }
