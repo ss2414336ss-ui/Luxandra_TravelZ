@@ -2,20 +2,21 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="description" content="LuxAndra Travel - Luxury, family, and pet-friendly vacations tailored just for you."/>
-  <meta name="keywords" content="luxury travel, family vacations, pet friendly trips, holiday packages, LuxAndra Travel">
-  <title>LuxAndra Travel</title>
-  <link rel="stylesheet" href="styles.css"/>
-  <link rel="icon" href="favicon.ico" type="image/x-icon"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="LuxAndra Travel - Luxury, family, and pet-friendly vacations tailored just for you. Explore the world with curated experiences, stunning destinations, and exclusive packages." />
+  <meta name="keywords" content="luxury travel, family vacations, pet friendly trips, holiday packages, LuxAndra Travel, adventure travel, beach vacations, mountain getaways, travel deals, bespoke holidays">
+  <title>LuxAndra Travel - Curated Journeys for a Lifetime</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 </head>
 <body>
   <div id="progressBar"></div>
   <header>
     <div class="branding">
-      <a href="index.html"><img src="logo.png" alt="LuxAndra Travel Logo" class="logo"></a>
-      <h1>LuxAndra Travel</h1>
+      <a href="index.html" class="logo-link"><img src="logo.png" alt="LuxAndra Travel Logo" class="logo"></a>
+      <h1 class="site-title">LuxAndra Travel</h1>
       <p class="tagline">"Your best journey, our greatest blessing."</p>
     </div>
     <button class="menu-toggle" aria-label="Toggle navigation"><span></span><span></span><span></span></button>
@@ -30,36 +31,163 @@
     </nav>
   </header>
   <main>
-    <section class="hero">
-      <h2>Explore the World in Luxury & Comfort</h2>
-      <p>Book family and pet-friendly vacations with us today!</p>
-      <a href="packages.html" class="cta-btn">View Packages</a>
+    <section class="hero-section">
+      <div class="video-background">
+        <video autoplay muted loop id="heroVideo">
+          <source src="assets/hero-video.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <div class="hero-content">
+        <h2>Unforgettable Journeys, Tailored for You 🌍</h2>
+        <p>Book your dream vacation with our bespoke luxury, family, and pet-friendly packages.</p>
+        <div class="search-bar-container">
+          <input type="text" placeholder="Where do you want to go?" aria-label="Search for destinations or packages">
+          <button class="search-btn"><i class="fas fa-search"></i> Search</button>
+        </div>
+        <a href="packages.html" class="cta-btn">Explore Our Packages</a>
+      </div>
     </section>
 
-    <section class="content-section">
-      <h3 class="section-title">Featured Destinations</h3>
-      <div class="image-grid">
-        <div class="image-card">
-          <a href="#"><img src="assets/destination1.jpg" alt="A beautiful sunny beach destination"></a>
-          <h3>Destination 1</h3>
+    <hr>
+
+    <section class="section-featured-packages">
+      <h3 class="section-title">Our Most Popular Packages ✈️</h3>
+      <p class="section-subtitle">Discover our hand-picked deals and exclusive offers.</p>
+      <div class="package-grid">
+        <div class="package-card">
+          <img src="assets/package1.jpg" alt="Exotic beach vacation package" class="package-img">
+          <div class="card-content">
+            <h4>Luxury Maldives Retreat</h4>
+            <p>An exclusive 7-day escape to pristine beaches and turquoise waters.</p>
+            <span class="price">Starting from $2,500</span>
+            <a href="#" class="btn-primary">Learn More</a>
+          </div>
         </div>
-        <div class="image-card">
-          <a href="#"><img src="assets/destination2.jpg" alt="A cozy mountain lodge in a snowy landscape"></a>
-          <h3>Destination 2</h3>
+        <div class="package-card">
+          <img src="assets/package2.jpg" alt="Pet-friendly hiking trip in the mountains" class="package-img">
+          <div class="card-content">
+            <h4>Alpine Adventure for All</h4>
+            <p>A thrilling pet-friendly hiking and skiing trip in the Swiss Alps.</p>
+            <span class="price">Starting from $1,800</span>
+            <a href="#" class="btn-primary">Learn More</a>
+          </div>
         </div>
-        <div class="image-card">
-          <a href="#"><img src="assets/gallery1.jpg" alt="A grand monument in a historic city"></a>
-          <h3>Adventure Awaits</h3>
+        <div class="package-card">
+          <img src="assets/package3.jpg" alt="Family vacation in a theme park" class="package-img">
+          <div class="card-content">
+            <h4>Enchanted Family Fun in Orlando</h4>
+            <p>A magical vacation package perfect for families with kids of all ages.</p>
+            <span class="price">Starting from $1,200</span>
+            <a href="#" class="btn-primary">Learn More</a>
+          </div>
+        </div>
+      </div>
+      <div class="text-center">
+        <a href="packages.html" class="cta-btn secondary">View All Packages</a>
+      </div>
+    </section>
+
+    <hr>
+
+    <section class="section-testimonials">
+      <h3 class="section-title">What Our Customers Say 🌟</h3>
+      <div class="swiper-container testimonial-carousel">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide testimonial-card">
+            <p>"LuxAndra Travel made our honeymoon absolutely perfect. Every detail was taken care of, and the experience was truly luxurious."</p>
+            <div class="testimonial-author">
+              <span class="author-name">- Emily & Jake</span>
+              <span class="trip-location">Honeymoon in Bali</span>
+            </div>
+          </div>
+          <div class="swiper-slide testimonial-card">
+            <p>"We booked a family trip, and it was seamless. The pet-friendly accommodation was fantastic, and our dog had a great time too!"</p>
+            <div class="testimonial-author">
+              <span class="author-name">- The Roberts Family</span>
+              <span class="trip-location">Family trip to the Rockies</span>
+            </div>
+          </div>
+          <div class="swiper-slide testimonial-card">
+            <p>"The best travel agency I've ever used. The personalized service and unique itinerary were beyond my expectations."</p>
+            <div class="testimonial-author">
+              <span class="author-name">- Sarah M.</span>
+              <span class="trip-location">Solo adventure in Iceland</span>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
+    <hr>
+
+    <section class="section-blog">
+      <h3 class="section-title">Travel Inspiration & Guides 🗺️</h3>
+      <p class="section-subtitle">Read our latest articles and get inspired for your next adventure.</p>
+      <div class="blog-grid">
+        <div class="blog-card">
+          <img src="assets/blog1.jpg" alt="Blog post image of a vibrant market" class="blog-img">
+          <div class="card-content">
+            <h4>Top 10 Pet-Friendly European Cities</h4>
+            <p>Traveling with your furry friend? Find out which cities offer the best experiences for you and your pet.</p>
+            <a href="#" class="btn-link">Read More &rarr;</a>
+          </div>
+        </div>
+        <div class="blog-card">
+          <img src="assets/blog2.jpg" alt="Blog post image of a family hiking" class="blog-img">
+          <div class="card-content">
+            <h4>Essential Packing Tips for Family Vacations</h4>
+            <p>Don't forget a thing! Our ultimate guide to packing for a stress-free family trip.</p>
+            <a href="#" class="btn-link">Read More &rarr;</a>
+          </div>
+        </div>
+        <div class="blog-card">
+          <img src="assets/blog3.jpg" alt="Blog post image of a luxury hotel room" class="blog-img">
+          <div class="card-content">
+            <h4>The Rise of Bespoke Luxury Travel</h4>
+            <p>Discover how personalized itineraries and exclusive experiences are changing the way we travel.</p>
+            <a href="#" class="btn-link">Read More &rarr;</a>
+          </div>
         </div>
       </div>
     </section>
   </main>
   <button id="backToTop" aria-label="Back to top">↑</button>
-  <footer>
-    <p>Contact us at: <a href="tel:+917005469915">+91 7005469915</a> | 
-    <a href="mailto:exon-jingles.61@icloud.com">exon-jingles.61@icloud.com</a></p>
-    <p>&copy; 2025 LuxAndra Travel</p>
+  <footer class="site-footer">
+    <div class="footer-content">
+      <div class="footer-column">
+        <h4>Contact Us</h4>
+        <p><i class="fas fa-phone-alt"></i> <a href="tel:+917005469915">+91 7005469915</a></p>
+        <p><i class="fas fa-envelope"></i> <a href="mailto:exon-jingles.61@icloud.com">contact@luxandratravel.com</a></p>
+      </div>
+      <div class="footer-column">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="packages.html">Packages</a></li>
+          <li><a href="reviews.html">Reviews</a></li>
+        </ul>
+      </div>
+      <div class="footer-column newsletter">
+        <h4>Stay Updated</h4>
+        <p>Subscribe to our newsletter for exclusive deals and travel tips!</p>
+        <form>
+          <input type="email" placeholder="Enter your email" required aria-label="Enter your email address for newsletter subscription">
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 LuxAndra Travel. All Rights Reserved.</p>
+      <div class="social-icons">
+        <a href="#" aria-label="Follow us on Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" aria-label="Follow us on Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="#" aria-label="Follow us on Twitter"><i class="fab fa-twitter"></i></a>
+      </div>
+    </div>
   </footer>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script src="script.js" defer></script>
 </body>
 </html>
