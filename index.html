@@ -3,86 +3,30 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Luxandra TravelZ - Your trusted travel partner for memorable journeys, personalized services, and seamless travel experiences.">
+  <meta name="description" content="LuxAndra Travel - Explore destinations, packages, and experiences in India.">
+  <title>LuxAndra Travel - Home</title>
   <link rel="stylesheet" href="styles.css">
-  <title>Luxandra TravelZ</title>
+  <link rel="icon" href="assets/favicon.png">
 </head>
 <body>
-  <!-- Header -->
   <header>
-    <img src="images/logo.png" alt="Luxandra TravelZ Logo - Travel with luxury" class="logo">
-    <button class="menu-toggle" aria-label="Toggle navigation">☰</button>
     <nav>
+      <h1>LuxAndra Travel</h1>
       <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="destinations.html">Destinations</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="packages.html">Packages</a></li>
+        <li><a href="reviews.html">Reviews</a></li>
+        <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
+    <div class="hero">
+      <h2>Discover Uttarakhand with Us</h2>
+      <p>Your adventure begins here.</p>
+      <a href="packages.html" class="btn">Explore Packages</a>
+    </div>
   </header>
-
-  <!-- Main Content -->
-  <main>
-    <!-- Home Section -->
-    <section id="home">
-      <h1>Welcome to Luxandra TravelZ</h1>
-      <p>Your journey starts here. Explore the world with us.</p>
-    </section>
-
-    <!-- About Section -->
-    <section id="about">
-      <h2>About Us</h2>
-      <p>At <strong>Luxandra TravelZ</strong>, we believe travel is more than visiting places—it's about creating lasting memories. 
-      With years of expertise, we bring you customized tours, luxury retreats, and hassle-free journeys.</p>
-    </section>
-
-    <!-- Services Section -->
-    <section id="services">
-      <h2>Our Services</h2>
-      <div class="services-grid">
-        <div class="service">
-          <h3>Custom Tour Packages</h3>
-          <p>Tailored itineraries designed to match your travel dreams.</p>
-        </div>
-        <div class="service">
-          <h3>Luxury Stays</h3>
-          <p>Handpicked hotels, villas, and resorts for comfort and elegance.</p>
-        </div>
-        <div class="service">
-          <h3>Adventure Travel</h3>
-          <p>Thrilling treks, safaris, and outdoor experiences for explorers.</p>
-        </div>
-        <div class="service">
-          <h3>Corporate Travel</h3>
-          <p>Seamless travel planning for business trips, meetings, and events.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact">
-      <h2>Contact Us</h2>
-      <p>We’d love to hear from you! Reach out for bookings, queries, or collaborations.</p>
-      <form>
-        <input type="text" name="name" placeholder="Your Name" required>
-        <input type="email" name="email" placeholder="Your Email" required>
-        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
-        <button type="submit">Send Message</button>
-      </form>
-    </section>
-  </main>
-
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2023 Luxandra TravelZ. All rights reserved.</p>
-  </footer>
-
-  <!-- JavaScript for Mobile Menu -->
-  <script>
-    document.querySelector('.menu-toggle').addEventListener('click', () => {
-      document.querySelector('nav ul').classList.toggle('active');
-    });
-  </script>
 </body>
 </html>
