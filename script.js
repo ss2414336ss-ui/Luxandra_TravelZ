@@ -1,72 +1,35 @@
-document.addEventListener('DOMContentLoaded', () => {
-
-  // --- Initialize Swiper Carousel ---
-  // Ensure you have the Swiper library linked in your HTML
-  const swiper = new Swiper('.swiper-container', {
-    loop: true,
-    slidesPerView: 1,
-    spaceBetween: 30,
-    autoplay: {
-      delay: 5000,
-      disableOnInteraction: false,
-    },
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-    },
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-    breakpoints: {
-      768: {
-        slidesPerView: 2,
-      },
-      1024: {
-        slidesPerView: 3,
-      },
-    }
-  });
-
-
-  // --- Back-to-Top Button Functionality ---
-  const backToTopButton = document.getElementById('back-to-top');
-
-  window.addEventListener('scroll', () => {
-    if (window.scrollY > 300) {
-      backToTopButton.style.display = 'flex';
-    } else {
-      backToTopButton.style.display = 'none';
-    }
-  });
-
-  backToTopButton.addEventListener('click', () => {
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth'
+// Smooth scroll
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener("click", function (e) {
+    e.preventDefault();
+    document.querySelector(this.getAttribute("href")).scrollIntoView({
+      behavior: "smooth"
     });
   });
-
-
-  // --- Menu Toggle (for mobile) ---
-  const menuToggle = document.querySelector('.menu-toggle');
-  const navMenu = document.querySelector('.nav-menu'); // Assuming you have a class .nav-menu on your main navigation element
-
-  if (menuToggle && navMenu) {
-    menuToggle.addEventListener('click', () => {
-      navMenu.classList.toggle('active'); // You would need CSS to handle the .active class
-    });
-  }
-
 });
-<script>
-  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function(e) {
-      e.preventDefault();
-      document.querySelector(this.getAttribute('href')).scrollIntoView({
-        behavior: 'smooth',
-        block: 'start'
-      });
-    });
+
+// Contact form validation
+document.getElementById("contactForm")?.addEventListener("submit", function (e) {
+  e.preventDefault();
+  alert("Thank you! Your message has been sent.");
+  this.reset();
+});
+
+// Lightbox effect for gallery
+document.querySelectorAll(".lightbox").forEach(img => {
+  img.addEventListener("click", () => {
+    const overlay = document.createElement("div");
+    overlay.style.position = "fixed";
+    overlay.style.top = 0;
+    overlay.style.left = 0;
+    overlay.style.width = "100%";
+    overlay.style.height = "100%";
+    overlay.style.background = "rgba(0,0,0,0.8)";
+    overlay.style.display = "flex";
+    overlay.style.alignItems = "center";
+    overlay.style.justifyContent = "center";
+    overlay.innerHTML = `<img src="${img.src}" style="max-width:90%; max-height:90%;">`;
+    overlay.addEventListener("click", () => overlay.remove());
+    document.body.appendChild(overlay);
   });
-</script>
+});
