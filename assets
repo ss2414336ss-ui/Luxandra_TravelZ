@@ -1,1 +1,18 @@
-https://github.com/ss2414336ss-ui/Luxandra_TravelZ/blob/main/gallery1.jpg
+Luxandra_TravelZ/
+│── index.html
+│── about.html
+│── destinations.html
+│── gallery.html
+│── packages.html
+│── reviews.html
+│── contact.html
+│── styles.css
+│── script.js
+│── assets/
+│    ├── hero-bg.jpg
+│    ├── destination1.jpg
+│    ├── destination2.jpg
+│    ├── gallery1.jpg
+│    ├── gallery2.jpg
+│    ├── favicon.png
+│    └── ... (other images)
