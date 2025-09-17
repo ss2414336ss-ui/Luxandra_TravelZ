@@ -7,39 +7,6 @@
   <link rel="stylesheet" href="styles.css"/>
   <link rel="icon" href="favicon.ico" type="image/x-icon"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <style>
-    .reviews-container {
-      padding: 2rem;
-      max-width: 1000px;
-      margin: auto;
-      display: grid;
-      grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
-      gap: 1.5rem;
-    }
-    .review-card {
-      background: #fff;
-      border-radius: 10px;
-      padding: 1.5rem;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-      transition: transform 0.3s ease;
-    }
-    .review-card:hover {
-      transform: translateY(-5px);
-    }
-    .review-card p {
-      font-style: italic;
-      margin-bottom: 1rem;
-    }
-    .review-card h4 {
-      margin: 0;
-      font-size: 1.1rem;
-      color: #2c3e50;
-    }
-    .review-card .stars {
-      color: #e67e22;
-      margin-bottom: 0.5rem;
-    }
-  </style>
 </head>
 <body>
   <div id="progressBar"></div>
@@ -65,21 +32,23 @@
       <h2>Reviews</h2>
       <p>What our happy travelers are saying</p>
     </section>
-    <section class="reviews-container">
-      <div class="review-card">
-        <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-        <p>"LuxAndra made our honeymoon unforgettable! Everything was perfectly organized."</p>
-        <h4>- Priya & Arjun</h4>
-      </div>
-      <div class="review-card">
-        <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></div>
-        <p>"We loved that they planned a pet-friendly vacation for our family. Highly recommended!"</p>
-        <h4>- Neha Sharma</h4>
-      </div>
-      <div class="review-card">
-        <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-        <p>"Professional service and luxurious experience. Will book again!"</p>
-        <h4>- Rajiv Mehta</h4>
+    <section class="content-section">
+      <div class="reviews-container">
+        <div class="review-card">
+          <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+          <p>"LuxAndra made our honeymoon unforgettable! Everything was perfectly organized."</p>
+          <h4>- Priya & Arjun</h4>
+        </div>
+        <div class="review-card">
+          <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></div>
+          <p>"We loved that they planned a pet-friendly vacation for our family. Highly recommended!"</p>
+          <h4>- Neha Sharma</h4>
+        </div>
+        <div class="review-card">
+          <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+          <p>"Professional service and luxurious experience. Will book again!"</p>
+          <h4>- Rajiv Mehta</h4>
+        </div>
       </div>
     </section>
   </main>
