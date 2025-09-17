@@ -1,1 +1,31 @@
-<!DOCTYPE html><html><head><title>Contact - LuxAndra Travel</title><link rel='stylesheet' href='styles.css'></head><body><h2>Contact Us</h2><form><input placeholder='Your Name'><br><input placeholder='Email'><br><textarea placeholder='Message'></textarea><br><button>Send</button></form><a href='index.html'>Back Home</a></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - LuxAndra Travel</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <h1>LuxAndra Travel</h1>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Get in Touch</h2>
+    <form id="contactForm">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+  </main>
+</body>
+<script src="script.js"></script>
+</html>
