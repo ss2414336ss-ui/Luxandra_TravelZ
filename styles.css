@@ -1,194 +1,181 @@
-/* --- Basic Reset and Global Styles --- */
-:root {
-  --primary-color: #6a1b9a;
-  --secondary-color: #00897b;
-  --text-color: #333;
-  --background-light: #f4f4f9;
-  --font-family-primary: 'Poppins', sans-serif;
-}
-
+/* Reset default styles */
 * {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
+/* Global styles */
 body {
-  font-family: var(--font-family-primary);
+  font-family: "Segoe UI", Arial, sans-serif;
   line-height: 1.6;
-  color: var(--text-color);
-  background-color: var(--background-light);
+  color: #333;
 }
 
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 1rem;
+h1, h2, h3 {
+  font-weight: 700;
 }
 
-/* --- Hero Section --- */
-.hero-section {
-  position: relative;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  color: white;
-  overflow: hidden;
-}
-
-.hero-video {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transform: translate(-50%, -50%);
-  z-index: -1;
-}
-
-.hero-content {
-  position: relative;
-  z-index: 1;
-  background: rgba(0, 0, 0, 0.4);
-  padding: 2rem;
-  border-radius: 10px;
-}
-
-.hero-title {
-  font-size: 3rem;
-  margin-bottom: 0.5rem;
-}
-
-.hero-subtitle {
-  font-size: 1.25rem;
-  margin-bottom: 1.5rem;
-}
-
-.cta-button {
-  background-color: var(--primary-color);
-  color: white;
-  padding: 0.75rem 2rem;
+a {
   text-decoration: none;
-  border-radius: 50px;
+  color: inherit;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background: #1a1a1a;
+  color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+header .logo {
+  height: 60px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  color: #fff;
   font-weight: bold;
-  transition: background-color 0.3s ease;
+  transition: color 0.3s ease;
 }
 
-.cta-button:hover {
-  background-color: var(--secondary-color);
+nav a:hover {
+  color: #f4c542;
 }
 
-/* --- Package Cards --- */
-.package-grid {
+/* Mobile toggle */
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+/* Sections */
+section {
+  padding: 60px 20px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+#home {
+  text-align: center;
+  background: url("images/travel-bg.jpg") no-repeat center/cover;
+  color: #fff;
+  padding: 100px 20px;
+}
+
+#home h1 {
+  font-size: 2.8rem;
+  margin-bottom: 15px;
+}
+
+#about p {
+  font-size: 1.1rem;
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
+  line-height: 1.8;
+}
+
+/* Services */
+#services {
+  text-align: center;
+}
+
+.services-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
-  padding: 2rem 0;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  margin-top: 30px;
 }
 
-.package-card {
-  background: white;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
+.service {
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.package-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+.service:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
-.package-image {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-}
-
-.package-content {
-  padding: 1.5rem;
-}
-
-.package-title {
-  font-size: 1.5rem;
-  margin-bottom: 0.5rem;
-  color: var(--primary-color);
-}
-
-.package-description {
-  margin-bottom: 1rem;
-}
-
-/* --- Testimonial Carousel --- */
-.testimonial-carousel {
-  padding: 3rem 0;
+/* Contact Form */
+#contact {
   text-align: center;
 }
 
-.swiper-container {
+#contact form {
+  max-width: 600px;
+  margin: 25px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+#contact input,
+#contact textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
   width: 100%;
-  padding-bottom: 3rem;
 }
 
-.testimonial-slide {
-  background: white;
-  padding: 2rem;
-  border-radius: 10px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.testimonial-text {
-  font-style: italic;
-  margin-bottom: 1rem;
-}
-
-.testimonial-author {
-  font-weight: bold;
-  color: var(--secondary-color);
-}
-
-/* --- Back-to-Top Button --- */
-#back-to-top {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background-color: var(--primary-color);
-  color: white;
+#contact button {
+  background: #f4c542;
+  color: #000;
+  padding: 12px;
   border: none;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  font-size: 1.5rem;
-  display: none;
-  justify-content: center;
-  align-items: center;
+  border-radius: 6px;
   cursor: pointer;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-  transition: background-color 0.3s ease;
+  font-weight: bold;
+  transition: background 0.3s ease;
 }
 
-#back-to-top:hover {
-  background-color: var(--secondary-color);
+#contact button:hover {
+  background: #e0b93d;
 }
 
-/* --- Responsive Menu Toggle --- */
-.menu-toggle {
-  display: none;
-  cursor: pointer;
-  font-size: 2rem;
-  position: fixed;
-  top: 1rem;
-  right: 1rem;
-  z-index: 100;
-  color: var(--primary-color);
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #111;
+  color: #ccc;
+  font-size: 0.9rem;
 }
 
+/* Responsive */
 @media (max-width: 768px) {
-  .hero-title {
-    font-size: 2rem;
+  nav ul {
+    flex-direction: column;
+    display: none;
+    background: #1a1a1a;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 200px;
+    padding: 15px;
+  }
+
+  nav ul.active {
+    display: flex;
   }
 
   .menu-toggle {
