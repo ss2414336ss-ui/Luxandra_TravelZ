@@ -1,60 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Gallery - LuxAndra Travel</title>
-  <link rel="stylesheet" href="styles.css"/>
-  <link rel="icon" href="favicon.ico" type="image/x-icon"/>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div id="progressBar"></div>
   <header>
-    <div class="branding">
-      <a href="index.html"><img src="logo.png" alt="LuxAndra Travel Logo" class="logo"></a>
+    <nav>
       <h1>LuxAndra Travel</h1>
-      <p class="tagline">"Your best journey, our greatest blessing."</p>
-    </div>
-    <button class="menu-toggle" aria-label="Toggle navigation"><span></span><span></span><span></span></button>
-    <nav aria-label="Main Navigation" class="nav-links">
-      <a href="index.html"><i class="fas fa-home"></i><span> Home</span></a>
-      <a href="about.html"><i class="fas fa-info-circle"></i><span> About</span></a>
-      <a href="destinations.html"><i class="fas fa-map-marked-alt"></i><span> Destinations</span></a>
-      <a href="packages.html"><i class="fas fa-suitcase-rolling"></i><span> Packages</span></a>
-      <a href="gallery.html" class="active"><i class="fas fa-image"></i><span> Gallery</span></a>
-      <a href="reviews.html"><i class="fas fa-star"></i><span> Reviews</span></a>
-      <a href="contact.html"><i class="fas fa-envelope"></i><span> Contact</span></a>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="gallery.html" class="active">Gallery</a></li>
+      </ul>
     </nav>
   </header>
+
   <main>
-    <section class="hero" style="background:#2980b9;">
-      <h2>Gallery</h2>
-      <p>A glimpse of unforgettable journeys</p>
-    </section>
-    <section class="content-section">
-      <div class="image-grid">
-        <div class="image-card">
-          <img src="assets/gallery1.jpg" alt="A grand monument in a historic city">
-        </div>
-        <div class="image-card">
-          <img src="assets/gallery2.jpg" alt="A beautiful scenic lake view">
-        </div>
-        <div class="image-card">
-          <img src="assets/destination1.jpg" alt="A tropical beach with palm trees">
-        </div>
-        <div class="image-card">
-          <img src="assets/destination2.jpg" alt="A snowy mountain peak at sunrise">
-        </div>
-      </div>
+    <h2>Travel Memories</h2>
+    <section class="gallery">
+      <img src="assets/gallery1.jpg" alt="Adventure in Rishikesh" class="lightbox">
+      <img src="assets/gallery2.jpg" alt="Serene Nainital Lake" class="lightbox">
     </section>
   </main>
-  <button id="backToTop" aria-label="Back to top">↑</button>
-  <footer>
-    <p>Contact us at: <a href="tel:+917005469915">+91 7005469915</a> | 
-    <a href="mailto:exon-jingles.61@icloud.com">exon-jingles.61@icloud.com</a></p>
-    <p>&copy; 2025 LuxAndra Travel</p>
-  </footer>
-  <script src="script.js" defer></script>
 </body>
+<script src="script.js"></script>
 </html>
