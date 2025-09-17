@@ -1,66 +1,61 @@
-// === Mobile Hamburger Drawer Menu ===
-const menuToggle = document.querySelector(".menu-toggle");
-const navLinks = document.querySelector(".nav-links");
+document.addEventListener('DOMContentLoaded', () => {
 
-menuToggle.addEventListener("click", () => {
-  if (navLinks.classList.contains("active")) {
-    // Closing with stagger fade-out
-    navLinks.classList.add("closing");
-    document.body.classList.remove("menu-open");
-    menuToggle.classList.remove("active");
+  // --- Initialize Swiper Carousel ---
+  // Ensure you have the Swiper library linked in your HTML
+  const swiper = new Swiper('.swiper-container', {
+    loop: true,
+    slidesPerView: 1,
+    spaceBetween: 30,
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    breakpoints: {
+      768: {
+        slidesPerView: 2,
+      },
+      1024: {
+        slidesPerView: 3,
+      },
+    }
+  });
 
-    setTimeout(() => {
-      navLinks.classList.remove("active", "closing");
-    }, 400);
-  } else {
-    // Opening
-    navLinks.classList.add("active");
-    document.body.classList.add("menu-open");
-    menuToggle.classList.add("active");
+
+  // --- Back-to-Top Button Functionality ---
+  const backToTopButton = document.getElementById('back-to-top');
+
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 300) {
+      backToTopButton.style.display = 'flex';
+    } else {
+      backToTopButton.style.display = 'none';
+    }
+  });
+
+  backToTopButton.addEventListener('click', () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  });
+
+
+  // --- Menu Toggle (for mobile) ---
+  const menuToggle = document.querySelector('.menu-toggle');
+  const navMenu = document.querySelector('.nav-menu'); // Assuming you have a class .nav-menu on your main navigation element
+
+  if (menuToggle && navMenu) {
+    menuToggle.addEventListener('click', () => {
+      navMenu.classList.toggle('active'); // You would need CSS to handle the .active class
+    });
   }
-});
 
-// Close when clicking overlay
-document.body.addEventListener("click", (e) => {
-  if (document.body.classList.contains("menu-open") &&
-      !navLinks.contains(e.target) &&
-      !menuToggle.contains(e.target)) {
-    menuToggle.click();
-  }
-});
-
-// === Back to Top Button ===
-let backToTopBtn = document.getElementById("backToTop");
-
-window.addEventListener("scroll", () => {
-  if (window.scrollY > 200) {
-    backToTopBtn.classList.add("show");
-  } else {
-    backToTopBtn.classList.remove("show");
-  }
-});
-
-backToTopBtn.onclick = () => {
-  window.scrollTo({ top: 0, behavior: 'smooth' });
-};
-
-// === Scroll Progress Bar ===
-const progressBar = document.getElementById("progressBar");
-
-window.addEventListener("scroll", () => {
-  let scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
-  let scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-  let scrollPercent = (scrollTop / scrollHeight) * 100;
-  progressBar.style.width = scrollPercent + "%";
-});
-
-// === Sticky Shrinking Header ===
-const header = document.querySelector("header");
-
-window.addEventListener("scroll", () => {
-  if (window.scrollY > 100) {
-    header.classList.add("shrink");
-  } else {
-    header.classList.remove("shrink");
-  }
 });
