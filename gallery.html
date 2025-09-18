@@ -1,10 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Gallery - LuxAndra Travel</title>
+  <meta name="description" content="Travel memories and destination gallery from LuxAndra Travel — Rishikesh, Nainital and Himalayan adventures.">
+  <meta property="og:title" content="LuxAndra Travel - Gallery">
+  <meta property="og:description" content="See the best moments from our curated journeys across India.">
+  <meta property="og:image" content="assets/gallery1.jpg">
   <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
@@ -14,40 +19,44 @@
       <h1>LuxAndra Travel</h1>
       <p class="tagline">"Your best journey, our greatest blessing."</p>
     </div>
+
     <button class="menu-toggle" aria-label="Toggle navigation"><span></span><span></span><span></span></button>
     <nav aria-label="Main Navigation" class="nav-links">
-      <a href="index.html"><i class="fas fa-home"></i><span> Home</span></a>
-      <a href="about.html"><i class="fas fa-info-circle"></i><span> About</span></a>
-      <a href="destinations.html"><i class="fas fa-map-marked-alt"></i><span> Destinations</span></a>
-      <a href="packages.html"><i class="fas fa-suitcase-rolling"></i><span> Packages</span></a>
-      <a href="gallery.html" class="active"><i class="fas fa-image"></i><span> Gallery</span></a>
-      <a href="reviews.html"><i class="fas fa-star"></i><span> Reviews</span></a>
-      <a href="contact.html"><i class="fas fa-envelope"></i><span> Contact</span></a>
+      <a href="index.html"><i class="fas fa-home" aria-hidden="true"></i><span> Home</span></a>
+      <a href="about.html"><i class="fas fa-info-circle" aria-hidden="true"></i><span> About</span></a>
+      <a href="destinations.html"><i class="fas fa-map-marked-alt" aria-hidden="true"></i><span> Destinations</span></a>
+      <a href="packages.html"><i class="fas fa-suitcase-rolling" aria-hidden="true"></i><span> Packages</span></a>
+      <a href="gallery.html" class="active" aria-current="page"><i class="fas fa-image" aria-hidden="true"></i><span> Gallery</span></a>
+      <a href="reviews.html"><i class="fas fa-star" aria-hidden="true"></i><span> Reviews</span></a>
+      <a href="contact.html"><i class="fas fa-envelope" aria-hidden="true"></i><span> Contact</span></a>
     </nav>
   </header>
 
   <main>
-    <section class="gallery-hero">
-      <h2>Travel Memories</h2>
+    <section class="gallery-hero" aria-labelledby="gallery-heading">
+      <h2 id="gallery-heading">Travel Memories</h2>
+      <p class="sr-only">Click images to view larger. Use filters to narrow by destination.</p>
     </section>
 
-    <section class="gallery-filter">
-      <button class="filter-btn active" data-filter="all">All</button>
-      <button class="filter-btn" data-filter="rishikesh">Rishikesh</button>
-      <button class="filter-btn" data-filter="nainital">Nainital</button>
+    <section class="gallery-filter" role="toolbar" aria-label="Gallery filters">
+      <button class="filter-btn active" data-filter="all" aria-pressed="true">All</button>
+      <button class="filter-btn" data-filter="rishikesh" aria-pressed="false">Rishikesh</button>
+      <button class="filter-btn" data-filter="nainital" aria-pressed="false">Nainital</button>
     </section>
 
-    <section class="photo-grid">
-      <img src="assets/gallery1.jpg" alt="Adventure in Rishikesh" class="lightbox gallery-item rishikesh">
-      <img src="assets/gallery2.jpg" alt="Serene Nainital Lake" class="lightbox gallery-item nainital">
-      <img src="assets/gallery3.jpg" alt="River rafting in Rishikesh" class="lightbox gallery-item rishikesh">
-      <img src="assets/gallery4.jpg" alt="Sunrise over Nainital hills" class="lightbox gallery-item nainital">
+    <section class="photo-grid" aria-live="polite" aria-label="Photo gallery">
+      <img src="assets/gallery1.jpg" alt="Group enjoying adventure activities in Rishikesh" class="lightbox gallery-item rishikesh" tabindex="0">
+      <img src="assets/gallery2.jpg" alt="Boat on the calm waters of Nainital lake at sunrise" class="lightbox gallery-item nainital" tabindex="0">
+      <img src="assets/gallery3.jpg" alt="River rafting action in Rishikesh" class="lightbox gallery-item rishikesh" tabindex="0">
+      <img src="assets/gallery4.jpg" alt="Sunrise over the hills surrounding Nainital" class="lightbox gallery-item nainital" tabindex="0">
+      <!-- Add more gallery images here; ensure each has a descriptive alt -->
     </section>
   </main>
-  
+
   <footer>
     <p>&copy; 2025 LuxAndra Travel. All Rights Reserved.</p>
   </footer>
-  <script src="script.js"></script>
+
+  <script src="script.js" defer></script>
 </body>
 </html>
