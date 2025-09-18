@@ -9,10 +9,10 @@
   <link rel="icon" href="assets/favicon.png">
 </head>
 <body>
-  <header>
-    <nav>
-      <h1>LuxAndra Travel</h1>
-      <ul>
+  <header class="main-header">
+    <nav class="navbar">
+      <h1 class="logo">LuxAndra Travel</h1>
+      <ul class="nav-links">
         <li><a href="index.html" class="active">Home</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="destinations.html">Destinations</a></li>
@@ -22,11 +22,53 @@
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
-    <div class="hero">
-      <h2>Discover Uttarakhand with Us</h2>
-      <p>Your adventure begins here.</p>
-      <a href="packages.html" class="btn">Explore Packages</a>
+    <div class="hero-section">
+      <div class="hero-content">
+        <h2>Discover Uttarakhand with Us</h2>
+        <p>Your adventure begins here.</p>
+        <a href="packages.html" class="btn btn-primary">Explore Packages</a>
+      </div>
     </div>
   </header>
+
+  <main>
+    <section class="intro-section">
+      <div class="intro-text">
+        <h3>Curated Journeys Across India</h3>
+        <p>At LuxAndra Travel, we are passionate about crafting unique and memorable experiences. Our goal is to connect you with the authentic heart of India, from the spiritual serenity of the Himalayas to the vibrant culture of its cities.</p>
+        <a href="about.html" class="btn btn-secondary">Learn More</a>
+      </div>
+      <img src="assets/about-us.jpg" alt="A scenic view of a mountain valley">
+    </section>
+
+    <section class="featured-packages">
+      <h2>Featured Packages</h2>
+      <div class="package-grid">
+        <div class="package-card">
+          <img src="assets/package1.jpg" alt="Namaste Pahadi Camp Retreat">
+          <div class="package-info">
+            <h4>Namaste Pahadi Camp Retreat</h4>
+            <p>A tranquil retreat in the heart of nature.</p>
+            <p class="price">₹2200 / night (MAP Plan, includes taxes)</p>
+            <a href="contact.html" class="btn btn-primary">Book Now</a>
+          </div>
+        </div>
+        <div class="package-card">
+          <img src="assets/package2.jpg" alt="Namaste Pahadi Camp Stay">
+          <div class="package-info">
+            <h4>Namaste Pahadi Camp Stay</h4>
+            <p>A simple and cozy camp stay without meals.</p>
+            <p class="price">₹1200 / night (without meals, includes taxes)</p>
+            <a href="contact.html" class="btn btn-primary">Book Now</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 LuxAndra Travel. All Rights Reserved.</p>
+  </footer>
 </body>
+<script src="script.js"></script>
 </html>
