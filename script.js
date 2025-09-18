@@ -1,4 +1,4 @@
-// Function to handle smooth scrolling
+// Smooth scrolling
 function setupSmoothScroll() {
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener("click", function (e) {
@@ -6,27 +6,26 @@ function setupSmoothScroll() {
       const targetId = this.getAttribute("href");
       const targetElement = document.querySelector(targetId);
       if (targetElement) {
-        targetElement.scrollIntoView({
-          behavior: "smooth"
-        });
+        targetElement.scrollIntoView({ behavior: "smooth" });
       }
     });
   });
 }
 
-// Function for the contact form
+// Contact form submission with success message
 function setupContactForm() {
   const contactForm = document.getElementById("contactForm");
   if (contactForm) {
     contactForm.addEventListener("submit", function (e) {
-      e.preventDefault();
-      alert("Thank you! Your message has been sent.");
-      this.reset();
+      // Let Netlify handle submission, but show confirmation
+      setTimeout(() => {
+        alert("Thank you! Your message has been sent.");
+      }, 200);
     });
   }
 }
 
-// Function to handle the lightbox effect for the gallery
+// Lightbox effect
 function setupLightbox() {
   document.querySelectorAll(".lightbox").forEach(img => {
     img.addEventListener("click", () => {
@@ -49,7 +48,7 @@ function setupLightbox() {
   });
 }
 
-// Function to handle gallery filtering
+// Gallery filter
 function setupGalleryFilter() {
   const filterButtons = document.querySelectorAll(".filter-btn");
   const galleryItems = document.querySelectorAll(".gallery-item");
@@ -58,22 +57,17 @@ function setupGalleryFilter() {
     button.addEventListener("click", () => {
       const filter = button.dataset.filter;
 
-      // Update active button state
       filterButtons.forEach(btn => btn.classList.remove("active"));
       button.classList.add("active");
 
       galleryItems.forEach(item => {
-        if (filter === "all" || item.classList.contains(filter)) {
-          item.style.display = "block";
-        } else {
-          item.style.display = "none";
-        }
+        item.style.display = (filter === "all" || item.classList.contains(filter)) ? "block" : "none";
       });
     });
   });
 }
 
-// Function to handle mobile menu toggle
+// Mobile menu toggle
 function setupMobileMenu() {
   const menuToggle = document.querySelector(".menu-toggle");
   const navLinks = document.querySelector(".nav-links");
