@@ -7,30 +7,56 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <nav>
-      <h1>LuxAndra Travel</h1>
-      <ul>
+  <header class="main-header">
+    <nav class="navbar">
+      <h1 class="logo">LuxAndra Travel</h1>
+      <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
         <li><a href="destinations.html" class="active">Destinations</a></li>
-        <li><a href="packages.html">Packages</a></li>
         <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="packages.html">Packages</a></li>
+        <li><a href="reviews.html">Reviews</a></li>
+        <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
-    <h2>Top Destinations</h2>
-    <section class="grid">
-      <figure>
+    <section class="destinations-hero">
+      <h2>Top Destinations</h2>
+    </section>
+
+    <section class="destination-grid">
+      <div class="destination-card">
         <img src="assets/destination1.jpg" alt="Rishikesh">
-        <figcaption>Rishikesh, Uttarakhand</figcaption>
-      </figure>
-      <figure>
+        <div class="destination-info">
+          <h3>Rishikesh, Uttarakhand</h3>
+          <p>The ‘Yoga Capital of the World’ offers spiritual retreats, river rafting, and breathtaking views of the Himalayas.</p>
+          <a href="packages.html#rishikesh" class="btn btn-secondary">View Packages</a>
+        </div>
+      </div>
+      <div class="destination-card">
         <img src="assets/destination2.jpg" alt="Nainital">
-        <figcaption>Nainital, Uttarakhand</figcaption>
-      </figure>
+        <div class="destination-info">
+          <h3>Nainital, Uttarakhand</h3>
+          <p>A picturesque hill station known for its pristine lake and charming colonial-era architecture.</p>
+          <a href="packages.html#nainital" class="btn btn-secondary">View Packages</a>
+        </div>
+      </div>
+      <div class="destination-card">
+        <img src="assets/destination3.jpg" alt="Corbett National Park">
+        <div class="destination-info">
+          <h3>Corbett National Park</h3>
+          <p>India's oldest national park, a perfect destination for wildlife enthusiasts and nature lovers.</p>
+          <a href="contact.html" class="btn btn-secondary">Enquire Now</a>
+        </div>
+      </div>
     </section>
   </main>
+
+  <footer>
+    <p>&copy; 2025 LuxAndra Travel. All Rights Reserved.</p>
+  </footer>
 </body>
 </html>
