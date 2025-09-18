@@ -5,14 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta name="description" content="LuxAndra Travel - Luxury, family, and pet-friendly vacations tailored just for you."/>
   <meta name="keywords" content="luxury travel, family vacations, pet friendly trips, holiday packages, LuxAndra Travel">
-  <title>LuxAndra Travel</title>
+  <title>LuxAndra Travel - Home</title>
   <link rel="stylesheet" href="styles.css"/>
   <link rel="icon" href="favicon.ico" type="image/x-icon"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
   <div id="progressBar"></div>
-  <header>
+  <header class="main-header">
     <div class="branding">
       <a href="index.html"><img src="logo.png" alt="LuxAndra Travel Logo" class="logo"></a>
       <h1>LuxAndra Travel</h1>
@@ -30,22 +30,56 @@
     </nav>
   </header>
   <main>
-    <section class="hero">
-      <h2>Explore the World in Luxury & Comfort</h2>
-      <p>Book family and pet-friendly vacations with us today!</p>
-      <a href="packages.html" class="cta-btn">View Packages</a>
+    <section class="hero-section">
+      <div class="hero-content">
+        <h2>Explore the World in Luxury & Comfort</h2>
+        <p>Book family and pet-friendly vacations with us today!</p>
+        <a href="packages.html" class="btn btn-primary">View Packages</a>
+      </div>
     </section>
 
-    <section style="padding:2rem; max-width:1200px; margin:auto;">
-      <h3 style="text-align:center; margin-bottom:1.5rem;">Featured Destinations</h3>
-      <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); gap:1rem;">
-        <div><img src="assets/destination1.jpg" alt="Destination 1" style="width:100%; border-radius:8px;"><h4>Destination 1</h4></div>
-        <div><img src="assets/destination2.jpg" alt="Destination 2" style="width:100%; border-radius:8px;"><h4>Destination 2</h4></div>
-        <div><img src="assets/gallery1.jpg" alt="Gallery 1" style="width:100%; border-radius:8px;"><h4>Adventure</h4></div>
+    <section class="intro-section">
+      <div class="intro-text">
+        <h3>Curated Journeys Across India</h3>
+        <p>At LuxAndra Travel, we are passionate about crafting unique and memorable experiences. Our goal is to connect you with the authentic heart of India, from the spiritual serenity of the Himalayas to the vibrant culture of its cities.</p>
+        <a href="about.html" class="btn btn-secondary">Learn More</a>
+      </div>
+      <img src="assets/about-us.jpg" alt="A scenic view of a mountain valley">
+    </section>
+
+    <section class="featured-destinations">
+      <h2>Featured Destinations</h2>
+      <div class="destination-grid">
+        <div class="destination-card">
+          <img src="assets/destination1.jpg" alt="Rishikesh">
+          <div class="destination-info">
+            <h3>Rishikesh, Uttarakhand</h3>
+            <p>The ‘Yoga Capital of the World’ offers spiritual retreats and river rafting.</p>
+            <a href="destinations.html" class="btn-link">View Destination</a>
+          </div>
+        </div>
+        <div class="destination-card">
+          <img src="assets/destination2.jpg" alt="Nainital">
+          <div class="destination-info">
+            <h3>Nainital, Uttarakhand</h3>
+            <p>A picturesque hill station known for its pristine lake and charming architecture.</p>
+            <a href="destinations.html" class="btn-link">View Destination</a>
+          </div>
+        </div>
+        <div class="destination-card">
+          <img src="assets/gallery1.jpg" alt="Adventure">
+          <div class="destination-info">
+            <h3>Adventure in the Himalayas</h3>
+            <p>Experience the thrill of trekking and camping in breathtaking mountain landscapes.</p>
+            <a href="gallery.html" class="btn-link">View Gallery</a>
+          </div>
+        </div>
       </div>
     </section>
   </main>
+  
   <button id="backToTop" aria-label="Back to top">↑</button>
+
   <footer>
     <p>Contact us at: <a href="tel:+917005469915">+91 7005469915</a> | 
     <a href="mailto:exon-jingles.61@icloud.com">exon-jingles.61@icloud.com</a></p>
