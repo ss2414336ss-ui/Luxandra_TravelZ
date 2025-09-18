@@ -5,21 +5,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Reviews - LuxAndra Travel</title>
   <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
   <header class="main-header">
-    <nav class="navbar">
-      <h1 class="logo">LuxAndra Travel</h1>
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="destinations.html">Destinations</a></li>
-        <li><a href="gallery.html">Gallery</a></li>
-        <li><a href="packages.html">Packages</a></li>
-        <li><a href="reviews.html" class="active">Reviews</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
+    <div class="branding">
+      <a href="index.html"><img src="logo.png" alt="LuxAndra Travel Logo" class="logo"></a>
+      <h1>LuxAndra Travel</h1>
+      <p class="tagline">"Your best journey, our greatest blessing."</p>
+    </div>
+    <button class="menu-toggle" aria-label="Toggle navigation"><span></span><span></span><span></span></button>
+    <nav aria-label="Main Navigation" class="nav-links">
+      <a href="index.html"><i class="fas fa-home"></i><span> Home</span></a>
+      <a href="about.html"><i class="fas fa-info-circle"></i><span> About</span></a>
+      <a href="destinations.html"><i class="fas fa-map-marked-alt"></i><span> Destinations</span></a>
+      <a href="packages.html"><i class="fas fa-suitcase-rolling"></i><span> Packages</span></a>
+      <a href="gallery.html"><i class="fas fa-image"></i><span> Gallery</span></a>
+      <a href="reviews.html" class="active"><i class="fas fa-star"></i><span> Reviews</span></a>
+      <a href="contact.html"><i class="fas fa-envelope"></i><span> Contact</span></a>
     </nav>
   </header>
 
@@ -81,5 +84,6 @@
   <footer>
     <p>&copy; 2025 LuxAndra Travel. All Rights Reserved.</p>
   </footer>
+  <script src="script.js"></script>
 </body>
 </html>
