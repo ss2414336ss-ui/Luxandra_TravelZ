@@ -33,3 +33,11 @@ Luxandra_TravelZ/
 │── script.js           # Interactivity (scroll, lightbox, form)
 │── .nojekyll           # Prevent GitHub Pages from using Jekyll
 │── assets/             # Images, favicon
+---
+
+## 🛠️ Installation (Local Setup)
+
+1. Clone the repo:
+   ```bash
+   git clone https://github.com/ss2414336ss-ui/Luxandra_TravelZ.git
+   cd Luxandra_TravelZ
