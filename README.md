@@ -41,3 +41,8 @@ Luxandra_TravelZ/
    ```bash
    git clone https://github.com/ss2414336ss-ui/Luxandra_TravelZ.git
    cd Luxandra_TravelZ
+   ---
+
+✅ Just save this as `README.md` in your repo root, commit, and push.  
+
+👉 Do you also want me to **add screenshot placeholders automatically** in the README (so it looks good when people visit your repo), or would you prefer to upload screenshots manually once the site is live?
