@@ -7,29 +7,53 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <nav>
-      <h1>LuxAndra Travel</h1>
-      <ul>
+  <header class="main-header">
+    <nav class="navbar">
+      <h1 class="logo">LuxAndra Travel</h1>
+      <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="destinations.html">Destinations</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
         <li><a href="packages.html" class="active">Packages</a></li>
+        <li><a href="reviews.html">Reviews</a></li>
+        <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
-    <h2>Our Packages</h2>
-    <div class="package-card">
-      <h3>Namaste Pahadi Camp Retreat</h3>
-      <p>₹2200 / night (MAP Plan, includes taxes)</p>
-      <a href="contact.html" class="btn">Book Now</a>
-    </div>
+    <section class="packages-hero">
+      <h2>Our Packages</h2>
+    </section>
+    
+    <section class="package-section" id="rishikesh">
+      <div class="package-content">
+        <h3>Namaste Pahadi Camp Retreat</h3>
+        <p class="package-price">₹2200 / night <span class="plan">(MAP Plan, includes taxes)</span></p>
+        <p class="package-description">Experience the tranquility of Rishikesh with our all-inclusive retreat. This package includes accommodation in our cozy camp, all meals, and guided activities.</p>
+        <a href="contact.html" class="btn btn-primary">Book Now</a>
+      </div>
+      <div class="package-image">
+        <img src="assets/package1.jpg" alt="Namaste Pahadi Camp Retreat">
+      </div>
+    </section>
 
-    <div class="package-card">
-      <h3>Namaste Pahadi Camp Stay</h3>
-      <p>₹1200 / night (without meals, includes taxes)</p>
-      <a href="contact.html" class="btn">Book Now</a>
-    </div>
+    <section class="package-section reverse-layout" id="camp-stay">
+      <div class="package-content">
+        <h3>Namaste Pahadi Camp Stay</h3>
+        <p class="package-price">₹1200 / night <span class="plan">(without meals, includes taxes)</span></p>
+        <p class="package-description">Perfect for backpackers and independent travelers, this package provides a comfortable stay in our camp, giving you the freedom to explore the local cuisine and attractions at your own pace.</p>
+        <a href="contact.html" class="btn btn-primary">Book Now</a>
+      </div>
+      <div class="package-image">
+        <img src="assets/package2.jpg" alt="Namaste Pahadi Camp Stay">
+      </div>
+    </section>
   </main>
+
+  <footer>
+    <p>&copy; 2025 LuxAndra Travel. All Rights Reserved.</p>
+  </footer>
 </body>
 </html>
