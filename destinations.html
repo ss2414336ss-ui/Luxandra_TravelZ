@@ -1,10 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Destinations - LuxAndra Travel</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Top Destinations - LuxAndra Travel</title>
+  <meta name="description" content="Discover top destinations by LuxAndra Travel: Rishikesh, Nainital, Corbett National Park and Himalayan adventures.">
+  <meta property="og:title" content="LuxAndra Travel - Top Destinations">
+  <meta property="og:description" content="Explore our curated trips — spiritual retreats, hill station escapes, and wildlife safaris.">
+  <meta property="og:image" content="assets/destination1.jpg">
   <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
@@ -14,54 +19,59 @@
       <h1>LuxAndra Travel</h1>
       <p class="tagline">"Your best journey, our greatest blessing."</p>
     </div>
+
     <button class="menu-toggle" aria-label="Toggle navigation"><span></span><span></span><span></span></button>
     <nav aria-label="Main Navigation" class="nav-links">
-      <a href="index.html"><i class="fas fa-home"></i><span> Home</span></a>
-      <a href="about.html"><i class="fas fa-info-circle"></i><span> About</span></a>
-      <a href="destinations.html" class="active"><i class="fas fa-map-marked-alt"></i><span> Destinations</span></a>
-      <a href="packages.html"><i class="fas fa-suitcase-rolling"></i><span> Packages</span></a>
-      <a href="gallery.html"><i class="fas fa-image"></i><span> Gallery</span></a>
-      <a href="reviews.html"><i class="fas fa-star"></i><span> Reviews</span></a>
-      <a href="contact.html"><i class="fas fa-envelope"></i><span> Contact</span></a>
+      <a href="index.html"><i class="fas fa-home" aria-hidden="true"></i><span> Home</span></a>
+      <a href="about.html"><i class="fas fa-info-circle" aria-hidden="true"></i><span> About</span></a>
+      <a href="destinations.html" class="active" aria-current="page"><i class="fas fa-map-marked-alt" aria-hidden="true"></i><span> Destinations</span></a>
+      <a href="packages.html"><i class="fas fa-suitcase-rolling" aria-hidden="true"></i><span> Packages</span></a>
+      <a href="gallery.html"><i class="fas fa-image" aria-hidden="true"></i><span> Gallery</span></a>
+      <a href="reviews.html"><i class="fas fa-star" aria-hidden="true"></i><span> Reviews</span></a>
+      <a href="contact.html"><i class="fas fa-envelope" aria-hidden="true"></i><span> Contact</span></a>
     </nav>
   </header>
 
   <main>
-    <section class="destinations-hero">
-      <h2>Top Destinations</h2>
+    <section class="destinations-hero" aria-labelledby="destinations-heading">
+      <h2 id="destinations-heading">Top Destinations</h2>
+      <p>Handpicked locations for relaxation, adventure, and wildlife experiences.</p>
     </section>
 
-    <section class="destination-grid">
-      <div class="destination-card">
-        <img src="assets/destination1.jpg" alt="Rishikesh">
+    <section class="destination-grid" aria-label="List of destinations">
+      <article class="destination-card" aria-labelledby="rishikesh-title">
+        <img src="assets/destination1.jpg" alt="Ganges river and hills in Rishikesh">
         <div class="destination-info">
-          <h3>Rishikesh, Uttarakhand</h3>
+          <h3 id="rishikesh-title">Rishikesh, Uttarakhand</h3>
           <p>The ‘Yoga Capital of the World’ offers spiritual retreats, river rafting, and breathtaking views of the Himalayas.</p>
-          <a href="packages.html#rishikesh" class="btn btn-secondary">View Packages</a>
+          <a href="packages.html#rishikesh" class="btn btn-secondary" aria-label="View Rishikesh packages">View Packages</a>
         </div>
-      </div>
-      <div class="destination-card">
-        <img src="assets/destination2.jpg" alt="Nainital">
+      </article>
+
+      <article class="destination-card" aria-labelledby="nainital-title">
+        <img src="assets/destination2.jpg" alt="Boats on Nainital lake with surrounding hills">
         <div class="destination-info">
-          <h3>Nainital, Uttarakhand</h3>
+          <h3 id="nainital-title">Nainital, Uttarakhand</h3>
           <p>A picturesque hill station known for its pristine lake and charming colonial-era architecture.</p>
-          <a href="packages.html#nainital" class="btn btn-secondary">View Packages</a>
+          <a href="packages.html#nainital" class="btn btn-secondary" aria-label="View Nainital packages">View Packages</a>
         </div>
-      </div>
-      <div class="destination-card">
-        <img src="assets/destination3.jpg" alt="Corbett National Park">
+      </article>
+
+      <article class="destination-card" aria-labelledby="corbett-title">
+        <img src="assets/destination3.jpg" alt="A jeep safari at Corbett National Park">
         <div class="destination-info">
-          <h3>Corbett National Park</h3>
-          <p>India's oldest national park, a perfect destination for wildlife enthusiasts and nature lovers.</p>
-          <a href="contact.html" class="btn btn-secondary">Enquire Now</a>
+          <h3 id="corbett-title">Corbett National Park</h3>
+          <p>India's oldest national park, ideal for wildlife enthusiasts and nature lovers.</p>
+          <a href="contact.html" class="btn btn-secondary" aria-label="Enquire about Corbett">Enquire Now</a>
         </div>
-      </div>
+      </article>
     </section>
   </main>
 
   <footer>
     <p>&copy; 2025 LuxAndra Travel. All Rights Reserved.</p>
   </footer>
-  <script src="script.js"></script>
+
+  <script src="script.js" defer></script>
 </body>
 </html>
