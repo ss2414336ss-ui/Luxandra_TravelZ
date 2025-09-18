@@ -21,3 +21,15 @@ A simple and elegant travel website built with **HTML, CSS, and JavaScript**, sh
 ---
 
 ## 📂 Project Structure
+Luxandra_TravelZ/
+│── index.html          # Home page
+│── about.html          # About us
+│── destinations.html   # Destinations
+│── gallery.html        # Gallery
+│── packages.html       # Packages
+│── reviews.html        # Reviews
+│── contact.html        # Contact form
+│── styles.css          # Main stylesheet
+│── script.js           # Interactivity (scroll, lightbox, form)
+│── .nojekyll           # Prevent GitHub Pages from using Jekyll
+│── assets/             # Images, favicon
