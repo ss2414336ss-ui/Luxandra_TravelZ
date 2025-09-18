@@ -5,20 +5,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact - LuxAndra Travel</title>
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
   <header class="main-header">
-    <nav class="navbar">
-      <h1 class="logo">LuxAndra Travel</h1>
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="destinations.html">Destinations</a></li>
-        <li><a href="gallery.html">Gallery</a></li>
-        <li><a href="packages.html">Packages</a></li>
-        <li><a href="reviews.html">Reviews</a></li>
-        <li><a href="contact.html" class="active">Contact</a></li>
-      </ul>
+    <div class="branding">
+      <a href="index.html"><img src="logo.png" alt="LuxAndra Travel Logo" class="logo"></a>
+      <h1>LuxAndra Travel</h1>
+      <p class="tagline">"Your best journey, our greatest blessing."</p>
+    </div>
+    <button class="menu-toggle" aria-label="Toggle navigation"><span></span><span></span><span></span></button>
+    <nav aria-label="Main Navigation" class="nav-links">
+      <a href="index.html"><i class="fas fa-home"></i><span> Home</span></a>
+      <a href="about.html"><i class="fas fa-info-circle"></i><span> About</span></a>
+      <a href="destinations.html"><i class="fas fa-map-marked-alt"></i><span> Destinations</span></a>
+      <a href="packages.html"><i class="fas fa-suitcase-rolling"></i><span> Packages</span></a>
+      <a href="gallery.html"><i class="fas fa-image"></i><span> Gallery</span></a>
+      <a href="reviews.html"><i class="fas fa-star"></i><span> Reviews</span></a>
+      <a href="contact.html" class="active"><i class="fas fa-envelope"></i><span> Contact</span></a>
     </nav>
   </header>
 
@@ -37,11 +41,11 @@
       <div class="contact-info">
         <h3>Contact Information</h3>
         <p>We are here to help with any questions you may have about our packages or destinations. Our team will get back to you as soon as possible!</p>
-        <p>Email: exon-jingles.61@icloud.com</p>
-        <p>Phone: +91 7005469915</p>
+        <p>Email: <a href="mailto:exon-jingles.61@icloud.com">exon-jingles.61@icloud.com</a></p>
+        <p>Phone: <a href="tel:+917005469915">+91 7005469915</a></p>
       </div>
     </section>
   </main>
+  <script src="script.js"></script>
 </body>
-<script src="script.js"></script>
 </html>
