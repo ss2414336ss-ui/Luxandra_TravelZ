@@ -7,23 +7,43 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <nav>
-      <h1>LuxAndra Travel</h1>
-      <ul>
+  <header class="main-header">
+    <nav class="navbar">
+      <h1 class="logo">LuxAndra Travel</h1>
+      <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="destinations.html">Destinations</a></li>
         <li><a href="gallery.html" class="active">Gallery</a></li>
+        <li><a href="packages.html">Packages</a></li>
+        <li><a href="reviews.html">Reviews</a></li>
+        <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
-    <h2>Travel Memories</h2>
-    <section class="gallery">
-      <img src="assets/gallery1.jpg" alt="Adventure in Rishikesh" class="lightbox">
-      <img src="assets/gallery2.jpg" alt="Serene Nainital Lake" class="lightbox">
+    <section class="gallery-hero">
+      <h2>Travel Memories</h2>
+    </section>
+
+    <section class="gallery-filter">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="rishikesh">Rishikesh</button>
+      <button class="filter-btn" data-filter="nainital">Nainital</button>
+    </section>
+
+    <section class="photo-grid">
+      <img src="assets/gallery1.jpg" alt="Adventure in Rishikesh" class="lightbox gallery-item rishikesh">
+      <img src="assets/gallery2.jpg" alt="Serene Nainital Lake" class="lightbox gallery-item nainital">
+      <img src="assets/gallery3.jpg" alt="River rafting in Rishikesh" class="lightbox gallery-item rishikesh">
+      <img src="assets/gallery4.jpg" alt="Sunrise over Nainital hills" class="lightbox gallery-item nainital">
     </section>
   </main>
+  
+  <footer>
+    <p>&copy; 2025 LuxAndra Travel. All Rights Reserved.</p>
+  </footer>
 </body>
 <script src="script.js"></script>
 </html>
